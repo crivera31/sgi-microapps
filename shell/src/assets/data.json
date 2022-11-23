@@ -1,0 +1,40 @@
+[
+    {
+        "tipo_tarjeta": "CREDITO",
+        "marca": [
+            {
+                "name": "AMERICAN EXPRESS",
+                "marca_tipo": [
+                    {
+                        "name": "AMEX CENTURION GOLD",
+                        "almacen": [
+                            {
+                                "name": "UNIBANCA"
+                            },
+                            {
+                                "name": "LOSCEDROS"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "AMEX CENTURION GREEN",
+                        "almacen": [
+                            {
+                                "name": "UNIBANCA"
+                            },
+                            {
+                                "name": "LATORRE"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "AMERICAN EXPRESS OTRO"
+            }
+        ]
+    },
+    {
+        "tipo_tarjeta": "DEBITO"
+    }
+]

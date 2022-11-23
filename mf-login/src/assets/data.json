@@ -1,0 +1,18 @@
+[
+    {
+        "tipo_tarjeta": "CREDITO",
+        "marca": [
+            {
+                "marca_tipo": "AMEX CENTURION GOLD",
+                "almacen": [
+                    {
+                        "name": "UNIBANCA"
+                    }
+                ]
+            },
+            {
+                "marca_tipo": "AMEX CENTURION GREEN"
+            }
+        ]
+    }
+]

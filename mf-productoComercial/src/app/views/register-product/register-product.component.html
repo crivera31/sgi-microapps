@@ -1,0 +1,91 @@
+<p>Nuevo Producto Comercial</p>
+<form id="prodComercialForm" autocomplete="off" [formGroup]="miForm"
+(ngSubmit)="onSave()">
+    <div>
+        <label for="">Diseño</label>
+    </div>
+
+    <div class="shell">
+        <div class="container">
+            <label class="input-personalizado">
+                <span class="botao-selecionar">Selecione uma imagem</span>
+                <input type="file" class="input-file" (change)="onFileOg($event)" formControlName="imgObligatorio">
+                <img class="imagem" [src]="imgTemp1">
+              </label>
+        </div>
+        
+        <div class="container">
+            <label class="input-personalizado">
+                <span class="botao-selecionar">Selecione uma imagem</span>
+                <input type="file" class="input-file" (change)="onFileOp($event)" formControlName="imgOpcional">
+                <img class="imagem" [src]="imgTemp2">
+              </label>
+        </div>
+        </div>
+
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" name="" id="" formControlName="nombre">
+    </div>
+    <div>
+        <label for="">Descripción</label>
+        <input type="text" name="" id="" formControlName="descripcion">
+    </div>
+    <div>
+        <label for="">BIN</label>
+        <input type="text" name="" id="" formControlName="bin">
+    </div>
+    <div>
+        <label for="">Marca</label>
+        <select name="" id="" formControlName="codigoMarcaProductoComercial">
+            <option *ngFor="let marca of lstMarca" [value]="marca.id" [ngValue]="marca">{{marca.name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Marca Tipo</label>
+        <select name="" id="" formControlName="codigoMarcaTipoProductoComercial">
+            <option *ngFor="let marcaTipo of lstMarcaTipo" [ngValue]="marcaTipo">{{marcaTipo.name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Afinidad</label>
+        <select name="" id="" formControlName="codigoAfinidad">
+            <option *ngFor="let afinidad of lstAfinidad" [ngValue]="afinidad">{{afinidad.name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Tipo Tarjeta</label>
+        <select name="" id="" formControlName="codigoTipoTarjeta">
+            <option *ngFor="let tipoTarjeta of lstTipoTarjeta" [ngValue]="tipoTarjeta">{{tipoTarjeta.name}}</option>
+        </select>
+    </div>
+    <div>
+        <label for="">Volumen por Paquete</label>
+        <input type="text" name="" id="" formControlName="volumenPaquete">
+    </div>
+    <div>
+        <label for="">SKU</label>
+        <input type="text" name="" id="" formControlName="sku">
+    </div>
+    <hr>
+    <div>
+        <label for="">Número meses mínimo stock</label>
+        <input type="text" name="" id="" formControlName="numeroMesesStockMinimo">
+    </div>
+    <div>
+        <label for="">Consumo promedio</label>
+        <input type="text" name="" id="" formControlName="consumoPromedio">
+
+        <label for="">Stock mínimo</label>
+        <input type="text" name="" id="" formControlName="stockMinimo">
+    </div>
+    <div>
+        <label for="">Precio producto comercial</label>
+        <input type="text" name="" id="" formControlName="precio">
+    </div>
+
+    <button type="submit" [disabled]="miForm.invalid">
+        Guardar
+    </button>
+</form>
+<hr>
