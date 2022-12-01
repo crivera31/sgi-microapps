@@ -71,7 +71,7 @@ export class RegisterProductComponent implements OnInit {
       name: "tipo-tarjeta2"
     }
   ];
-
+  dataJson: any;
   public miForm!: FormGroup;
   public productoComercial!: ProductoComercial
   public imgTemp1: any = '';
@@ -109,7 +109,7 @@ export class RegisterProductComponent implements OnInit {
   onFileOg(event:any){
     this.fileOg = event.target.files[0];
 
-    console.log("fichero", this.fileOg);
+    // console.log("fichero", this.fileOg);
     const reader = new FileReader();
     const url64 = reader.readAsDataURL(this.fileOg);
 
@@ -121,7 +121,7 @@ export class RegisterProductComponent implements OnInit {
   onFileOp(event:any){
     this.fileOp = event.target.files[0];
 
-    console.log("fichero", this.fileOp);
+    // console.log("fichero", this.fileOp);
     const reader = new FileReader();
     const url64 = reader.readAsDataURL(this.fileOp);
     reader.onloadend = () => {
@@ -130,6 +130,7 @@ export class RegisterProductComponent implements OnInit {
   }
 
   onSave() {
+    console.log(this.fileOg.name)
     const { nombre,bin,volumenPaquete,descripcion,sku,stockMinimo,
       numeroMesesStockMinimo,consumoPromedio,codigoAfinidad,precio,
       codigoMarcaTipoProductoComercial,codigoTipoTarjeta,codigoMarcaProductoComercial } = this.miForm.value;
@@ -137,10 +138,11 @@ export class RegisterProductComponent implements OnInit {
       nombre,bin,volumenPaquete,descripcion,sku,stockMinimo,
       numeroMesesStockMinimo,consumoPromedio,codigoAfinidad,
       codigoMarcaTipoProductoComercial,codigoTipoTarjeta,codigoMarcaProductoComercial,
-      img: this.fileOg,
       estado: 1,
-      precio
+      precio,
+      imagenInverso: this.fileOg.name
     }
+    this.dataJson = body;
     // console.log(this.miForm.value);
     console.log(body)
   }
