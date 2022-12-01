@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -23,6 +23,7 @@ import { UserWebRepositoryService } from '../data/user-web-repository/user-web-r
   ],
   providers: [
     { provide: UserRepository, useClass: UserWebRepositoryService}
-  ]
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AuthModule { }
