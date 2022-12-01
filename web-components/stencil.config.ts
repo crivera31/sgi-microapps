@@ -7,6 +7,7 @@ const angularValueAccessorBindings: ValueAccessorConfig[] = [];
 
 export const config: Config = {
   namespace: 'web-components',
+  buildEs5: true,
   outputTargets: [
     {
       type: 'dist',
@@ -22,11 +23,11 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
-    angularOutputTarget({
-      componentCorePackage: '@web-components/dist/components', // let's comeback here later
-      directivesProxyFile: './../shell/src/libs/stencil-generated/proxies.ts', // let's comeback here later
-      valueAccessorConfigs: angularValueAccessorBindings,
-    }),
+    // angularOutputTarget({
+    //   componentCorePackage: '@web-components/dist/components', // let's comeback here later
+    //   directivesProxyFile: './../shell/src/libs/stencil-generated/proxies.ts', // let's comeback here later
+    //   valueAccessorConfigs: angularValueAccessorBindings,
+    // }),
   ],
   plugins: [sass()],
 };
