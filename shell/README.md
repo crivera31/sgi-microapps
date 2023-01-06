@@ -1,5 +1,8 @@
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 # Sistema Gestión de Inventario
+
+Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cli) versión 14.2.8.
+
 ## :hammer:Funcionalidades del proyecto
 
 - `MicroFront Shell`: descripción de la funcionalidad 1
