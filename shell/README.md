@@ -1,5 +1,4 @@
-![image](https://user-images.githubusercontent.com/16200192/210935040-d322a63a-c595-4de5-9894-cc2bc835516c.png)
-
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 # Shell
 
