@@ -13,6 +13,9 @@ Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cl
 ## Instalación
 Para instalar los node_modules ejecute en cada proyecto ``` npm i ``` y ejecute con ``` ng serve ```
 
+## Creación y configuracion de MicroFront
+Cree un proyecto angular ``` ng new name_proyecto --routing ``` luego instale Module Federation ``` ng add @angular-architects/module-federation@14.3.14 ```
+
  ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
  
 # Shell
