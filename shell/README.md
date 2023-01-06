@@ -1,12 +1,13 @@
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 # Sistema Gestión de Inventario
 ## :hammer:Funcionalidades del proyecto
 
-- `Funcionalidad 1`: descripción de la funcionalidad 1
-- `Funcionalidad 2`: descripción de la funcionalidad 2
-- `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
-- `Funcionalidad 3`: descripción de la funcionalidad 3
+- `MicroFront Shell`: descripción de la funcionalidad 1
+- `MicroFront Login`: descripción de la funcionalidad 2
+- `MicroFront Producto Comercial`: descripción de la funcionalidade3
+- `MicroFront Material`: descripción de la funcionalidad 4
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+
 
  ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
  
