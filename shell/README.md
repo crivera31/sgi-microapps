@@ -11,7 +11,7 @@ Este proyecto se generó con [Angular CLI](https://github.com/angular/angular-cl
 - `MicroFront Material`: descripción de la funcionalidad 4
 
 ## Instalación
-Para instalar los node_modules ejecute en cada proyecto ```bash npm i ``` y ejecutar este proyecto solo escriba y ejecute
+Para instalar los node_modules ejecute en cada proyecto ``` npm i ``` y ejecute con ``` ng serve ```
 
  ![GitHub Org's stars](https://img.shields.io/github/stars/camilafernanda?style=social)
  
